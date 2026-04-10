@@ -2916,7 +2916,7 @@ const vmG_42d8c2 = (function() {
                                     {
                                         G1: {
                                             let uA = qn[--qJ], uR = qn[--qJ];
-                                            qn[qJ++] = uR * * uA, qg++;
+                                            qn[qJ++] = uR * uA, qg++;
                                         }
                                         break;
                                     }
@@ -2991,59 +2991,7 @@ const vmG_42d8c2 = (function() {
                                                             for (let un = uj['length'] < uL ? uj['length'] : uL; un < mw; un++) {
                                                                 qs[un] = undefined;
                                                             }
-                                                            qg = ue;
-                                                        } else {
-                                                            mq = h(uj), mR['_$o2HrD8'] = mq;
-                                                            for (let uJ = 0x0; uJ < mw; uJ++) {
-                                                                qs[uJ] = undefined;
-                                                            }
-                                                            qg = 0x0;
-                                                        }
-                                                        break G6;
-                                                    }
-                                                    vmT_1e9ec2['_$xn2I9a'] ? vmT_1e9ec2['_$xn2I9a'] = ![] : vmT_1e9ec2['_$4xfISg'] = undefined;
-                                                    qn[qJ++] = U(ui, uj, uz['e'], uP, undefined, undefined), qg++;
-                                                    break G6;
-                                                }
-                                            }
-                                            let uB = vmT_1e9ec2['_$4xfISg'], ud = vmT_1e9ec2['_$2dpUij'], uN = ud && ud['get'](uP);
-                                            uN ? (vmT_1e9ec2['_$xn2I9a'] = !! [], vmT_1e9ec2['_$4xfISg'] = uN) : vmT_1e9ec2['_$4xfISg'] = undefined;
-                                            let uh;
-                                            try {
-                                                if (uS === 0x0) uh = uP();
-                                                else {
-                                                    if (uS === 0x1) {
-                                                        let us = qn[--qJ];
-                                                        uh = us && typeof us === 'object' && P['has'](us) ? vmy(uP, undefined, us['value']) : uP(us);
-                                                    } else uh = vmy(uP, undefined, d(m3, uS));
-                                                }
-                                                qn[qJ++] = uh;
-                                            } finally {
-                                                uN && (vmT_1e9ec2['_$xn2I9a'] = ![]), vmT_1e9ec2['_$4xfISg'] = uB;
-                                            }
-                                            qg++;
-                                        }
-                                        break;
-                                    }
-                                case 0x3b:
-                                    {
-                                        G7: {
-                                            qI['pop'](), qg++;
-                                        }
-                                        break;
-                                    }
-                                case 0x28:
-                                    {
-                                        G8: {
-                                            let ug = qn[--qJ], uW = qn[--qJ];
-                                            qn[qJ++] = uW == ug, qg++;
-                                        }
-                                        break;
-                                    }
-                                case 0x4:
-                                    {
-                                        G9: {
-                                            let ut = qn[qJ - 0x1];
+
                                             qn[qJ++] = ut, qg++;
                                         }
                                         break;
