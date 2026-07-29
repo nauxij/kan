@@ -1,180 +1,162 @@
 import requests
 
-url1 = "https://pan.vma.cc/pan/down.php/350735607a786faaaa69aa5bbe3a3078.txt"
-url2 = "https://gitee.com/x21y/yx/raw/main/qdyd.txt"
-out_file = "qdyd.nzk"
+# ==========你的配置============
+url1 = "填源地址1"
+url2 = "填源地址2"
 
-# ========== 你的自定义排序顺序（原样复制，包含分组空行） ==========
-order_lines = """央卫港澳台,#genre#
-CCTV1：CCTV1#CCTV1综合#CCTV-1综合#CCTV-01#CCTV1HD
-山东卫视：山东卫视#山东卫视4K
-凤凰香港：凤凰香港
-CHC动作电影：CHC动作电影
-CCTV3：CCTV3#CCTV3综艺#CCTV-3综艺#CCTV-03
+# 排序模板
+order_lines = """
+CCTV1
+山东卫视
+凤凰香港
+CHC动作电影
+CCTV3
+CCTV5
+CCTV5+
+央视台球
+CCTV6
+河南曲艺
 
-CCTV5：CCTV5#CCTV5体育#CCTV-5 体育#CCTV-05
-CCTV5+：CCTV5+#CCTV5+体育#CCTV-5+ 体育赛事
-央视台球：央视台球#CCTV央视台球
-CCTV6：CCTV6#CCTV6电影#CCTV-6 电影#CCTV-06
-河南曲艺：河南曲艺
+CCTV8
+兵器科技
+梨园频道
+CCTV11
+CCTV12
 
-CCTV8：CCTV8#CCTV8电视剧#CCTV-8 电视剧#CCTV-08
-兵器科技：兵器科技
-梨园频道：梨园#梨园频道#犁园频道
-CCTV11：CCTV11#CCTV11戏曲#CCTV-11 戏曲#CCTV-11
-CCTV12：CCTV12#CCTV12法制#CCTV12社会与法#CCTV-12 社会与法#CCTV-12
+星河
+千禧经典
+CCTV15
+纬来音乐
+CCTV17
 
-星河：星河
-千禧经典：千禧经典
-CCTV15：CCTV15#CCTV15音乐#CCTV-15 音乐#CCTV-15
-纬来育乐：纬来育乐
-CCTV17：CCTV17#CCTV17农业#CCTV17农村#CCTV-17 农业农村#CCTV-17
+山东文旅
+纬来电影
+天津文艺
+北京文艺
+淘电影
 
-山东文旅：山东文旅
-纬来电影：纬来电影
-天津文艺：天津文艺
-北京文艺：北京文艺#BTV2
-淘电影：淘电影
+东森电影
+Popc
+天映频道
+龙华偶像
+山东教育卫视
 
+湖南卫视
+浙江卫视
+东方卫视
+江苏卫视
+北京卫视
 
-东森电影：东森电影
-Popc：Popc
-天映频道：天映频道#天映电影
-龙华偶像：龙华偶像
-山东教育卫视：山东教育卫视#山东教育
+安徽卫视
+天津卫视
+辽宁卫视
+深圳卫视
+东南卫视
 
-湖南卫视：湖南卫视#湖南卫视4K
-浙江卫视：浙江卫视#浙江卫视4K
-东方卫视：东方卫视#上海卫视#东方卫视4K
-江苏卫视：江苏卫视#江苏卫视4K
-北京卫视：北京卫视#北京卫视4K
+湖北卫视
+广东卫视
+黑龙江卫视
+贵州卫视
+河北卫视
 
-安徽卫视：安徽卫视
-天津卫视：天津卫视
-辽宁卫视：辽宁卫视
-深圳卫视：深圳卫视#深圳卫视4K
-东南卫视：东南卫视
+重庆卫视
+海南卫视
+四川卫视
+山西卫视
+河南卫视
 
-湖北卫视：湖北卫视
-广东卫视：广东卫视#广东卫视4K
-黑龙江卫视：黑龙江卫视
-贵州卫视：贵州卫视
-河北卫视：河北卫视
+江西卫视
+广西卫视
+吉林卫视
+云南卫视
+陕西卫视
 
-重庆卫视：重庆卫视
-海南卫视：海南卫视
-四川卫视：四川卫视#四川卫视4K
-山西卫视：山西卫视
-河南卫视：河南卫视
+无线功夫
 
-江西卫视：江西卫视
-广西卫视：广西卫视
-吉林卫视：吉林卫视
-云南卫视：云南卫视
-陕西卫视：陕西卫视
+天津影视
+精彩影视
+西部电影
+黑龙江影视
 
-无线功夫：无线功夫
+陕西都市青春
+重温经典
+天映经典
+靖洋戏剧
+龙华电影
 
-天津影视：天津影视
-精彩影视：精彩影视
-西部电影：西部电影
-黑龙江影视：黑龙江影视
+龙华经典
+龙华戏剧
+峨眉电影
+靖天电影
+CHC影迷电影
+CHC家庭影院
 
-陕西都市青春：都市青春
-重温经典：重温经典
-天映经典：天映经典
-靖洋戏剧：靖洋戏剧
-龙华电影：龙华电影
+第一剧场
+风云剧场
+风云音乐
 
-龙华经典：龙华经典
-龙华戏剧：龙华戏剧
-峨眉电影：峨眉电影
-靖天电影：靖天电影
-CHC影迷电影：CHC影迷电影
-CHC家庭影院：CHC家庭影院#CHC家庭电影
+华数剧场
+华数影院
+云南都市
+云南娱乐
 
+龙祥电影
+搜狐剧场
+""".strip().splitlines()
+# ==============================
 
-黑龙江影视：黑龙江影视
-第一剧场：第一剧场#CCTV第一剧场
-风云剧场：风云剧场#CCTV风云剧场
-风云音乐：风云音乐#CCTV风云音乐
+resp1 = requests.get(url1, timeout=15)
+resp2 = requests.get(url2, timeout=15)
 
-华数剧场：华数剧场
-华数影院：华数影院
-云南都市：云南都市
-云南娱乐：云南娱乐
+raw_all = []
+for text in [resp1.text, resp2.text]:
+    for line in text.splitlines():
+        ll = line.strip()
+        if not ll or ll.startswith("#"):
+            continue
+        raw_all.append(ll)
 
-龙祥电影：龙祥电影
-搜狐剧场：搜狐剧场"""
-
-#解析排序表
-order_list_raw = order_lines.splitlines()
-order_map = {}
-order_index = []
-for line in order_list_raw:
-    line_strip = line.strip()
-    if not line_strip:
-        order_index.append("")
+# key:台名, value:链接列表，收集全部源
+channel_links = {}
+for line in raw_all:
+    if ":" not in line:
         continue
-    #把中文冒号替换为英文冒号
-    fixed_line = line.replace("：",":")
-    if ":" in fixed_line:
-        name = fixed_line.split(":",1)[0].strip()
-        order_map[name] = line
-        order_index.append(name)
-    else:
-        order_index.append(line)
+    name_part, link = line.split(":",1)
+    real_name = name_part.split(",")[0].strip()
+    link = link.strip()
+    if real_name not in channel_links:
+        channel_links[real_name] = []
+    # 去重，避免重复链接
+    if link not in channel_links[real_name]:
+        channel_links[real_name].append(link)
 
+out = []
+used_names = set()
 
-def get_txt(url):
-    try:
-        h = {"User-Agent":"Mozilla/5.0"}
-        r = requests.get(url,headers=h,timeout=15)
-        r.raise_for_status()
-        return r.text
-    except Exception as e:
-        print(f"获取失败 {url} : {e}")
-        return ""
+# 按模板顺序输出，每个台最多输出2条源
+for name in order_lines:
+    n = name.strip()
+    if n == "":
+        out.append("")
+        continue
+    if n in channel_links:
+        link_list = channel_links[n][:2]   # 只取前2个源
+        for link in link_list:
+            out.append(f"{n},{link}")
+        used_names.add(n)
 
+# 其它频道，同样每个台最多2个源
+other_list = []
+for ch_name, link_list in channel_links.items():
+    if ch_name not in used_names:
+        for link in link_list[:2]:
+            other_list.append(f"{ch_name},{link}")
 
-if __name__ == "__main__":
-    t1 = get_txt(url1)
-    t2 = get_txt(url2)
-    all_text = t1 + "\n" + t2
-    source_lines = list(dict.fromkeys(all_text.splitlines()))
-    source_dict = {}
-    for l in source_lines:
-        ll = l.strip()
-        if not ll:
-            continue
-        #源文本同样把中文冒号转为英文冒号再提取频道名
-        fixed_ll = ll.replace("：",":")
-        if ":" in fixed_ll:
-            cname = fixed_ll.split(":",1)[0].strip()
-            source_dict[cname] = ll
+out.append("")
+out.append("# 其它频道")
+out.extend(other_list)
 
-    output = []
-    unknown = []
-    for item in order_index:
-        if item == "":
-            output.append("")
-            continue
-        if item in source_dict:
-            output.append(source_dict[item])
-        else:
-            if item in order_map:
-                output.append(order_map[item])
+with open("qdyd.nzk","w",encoding="utf-8") as f:
+    f.write("\n".join(out))
 
-    for cname,full_line in source_dict.items():
-        if cname not in order_map:
-            unknown.append(full_line)
-
-    if unknown:
-        output.append("")
-        output.append("# 其它频道")
-        output.extend(unknown)
-
-    final_text = "\n".join(output)
-    with open(out_file,"w",encoding="utf-8") as f:
-        f.write(final_text)
-    print("完成写入qdyd.nzk，已按自定义顺序排列")
+print("✅完成，每个台最多保留2个直播源，格式：台名,链接")
