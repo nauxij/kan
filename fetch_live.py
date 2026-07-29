@@ -6,7 +6,7 @@ out_file = "qdyd.nzk"
 
 def get_txt(url):
     try:
-        h = {"User‑Agent":"Mozilla/5.0"}
+        h = {"User-Agent":"Mozilla/5.0"}
         r = requests.get(url,headers=h,timeout=15)
         r.raise_for_status()
         return r.text
@@ -22,6 +22,6 @@ if __name__ == "__main__":
     #简单去重行
     lines = list(dict.fromkeys(all_text.splitlines()))
     final = "\n".join(lines)
-    with open(out_file,"w",encoding="utf‑8") as f:
+    with open(out_file,"w",encoding="utf-8") as f:
         f.write(final)
     print("完成写入qdyd.nzk")
