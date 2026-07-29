@@ -109,7 +109,6 @@ CHC家庭影院：CHC家庭影院#CHC家庭电影
 
 # 解析排序表，生成 {频道名称:完整行内容}
 order_list_raw = order_lines.splitlines()
-# key取冒号前面作为频道名
 order_map = {}
 order_index = []
 for line in order_list_raw:
@@ -117,8 +116,8 @@ for line in order_list_raw:
     if not line_strip:
         order_index.append("")
         continue
-    if "：" in line:
-        name = line.split("：",1)[0].strip()
+    if ":" in line:
+        name = line.split(":",1)[0].strip()
         order_map[name] = line
         order_index.append(name)
     else:
@@ -148,8 +147,8 @@ if __name__ == "__main__":
         ll = l.strip()
         if not ll:
             continue
-        if "：" in ll:
-            cname = ll.split("：",1)[0].strip()
+        if ":" in ll:
+            cname = ll.split(":",1)[0].strip()
             source_dict[cname] = ll
 
     output = []
