@@ -1,8 +1,8 @@
 import requests
 
 # ==========你的配置============
-url1 = "填源地址1"
-url2 = "填源地址2"
+url1 = "https://pan.vma.cc/pan/down.php/350735607a786faaaa69aa5bbe3a3078.txt"
+url2 = "https://gitee.com/x21y/yx/raw/main/qdyd.txt"
 
 # 排序模板
 order_lines = """
@@ -36,7 +36,7 @@ CCTV17
 淘电影
 
 东森电影
-Popc
+美亚电影
 天映频道
 龙华偶像
 山东教育卫视
@@ -153,7 +153,7 @@ for ch_name, link_list in channel_links.items():
             other_list.append(f"{ch_name},{link}")
 
 out.append("")
-out.append("# 其它频道")
+out.append("# 央卫港澳台")
 out.extend(other_list)
 
 with open("qdyd.nzk","w",encoding="utf-8") as f:
