@@ -107,7 +107,7 @@ CHC家庭影院：CHC家庭影院#CHC家庭电影
 龙祥电影：龙祥电影
 搜狐剧场：搜狐剧场"""
 
-# 解析排序表，生成 {频道名称:完整行内容}
+#解析排序表
 order_list_raw = order_lines.splitlines()
 order_map = {}
 order_index = []
@@ -116,8 +116,10 @@ for line in order_list_raw:
     if not line_strip:
         order_index.append("")
         continue
-    if ":" in line:
-        name = line.split(":",1)[0].strip()
+    #把中文冒号替换为英文冒号
+    fixed_line = line.replace("：",":")
+    if ":" in fixed_line:
+        name = fixed_line.split(":",1)[0].strip()
         order_map[name] = line
         order_index.append(name)
     else:
@@ -139,21 +141,20 @@ if __name__ == "__main__":
     t1 = get_txt(url1)
     t2 = get_txt(url2)
     all_text = t1 + "\n" + t2
-    #源数据去重
     source_lines = list(dict.fromkeys(all_text.splitlines()))
-    #源数据字典 key=频道名，value=完整行
     source_dict = {}
     for l in source_lines:
         ll = l.strip()
         if not ll:
             continue
-        if ":" in ll:
-            cname = ll.split(":",1)[0].strip()
+        #源文本同样把中文冒号转为英文冒号再提取频道名
+        fixed_ll = ll.replace("：",":")
+        if ":" in fixed_ll:
+            cname = fixed_ll.split(":",1)[0].strip()
             source_dict[cname] = ll
 
     output = []
     unknown = []
-    #按预设顺序输出
     for item in order_index:
         if item == "":
             output.append("")
@@ -161,11 +162,9 @@ if __name__ == "__main__":
         if item in source_dict:
             output.append(source_dict[item])
         else:
-            #预设里有，但源没这个频道，就写排序模板里原始行
             if item in order_map:
                 output.append(order_map[item])
 
-    #收集不在排序列表里的频道，追加到末尾
     for cname,full_line in source_dict.items():
         if cname not in order_map:
             unknown.append(full_line)
