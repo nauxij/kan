@@ -17,6 +17,9 @@ CCTV11,http://207.56.13.146:81/cdnlive/cctv11.m3u8
 CCTV12,http://207.56.13.146:81/cdnlive/cctv12.m3u8
 
 星河,https://cdn6.cc.cd/163189/tvbxh
+纬来育乐,rtmp://f13h.mine.nu/sat/tv701
+CCTV15,http://207.56.13.146:81/cdnlive/cctv15.m3u8
+五星体育,video://https://live.kankanews.com/huikan?id=10
 CCTV17,http://207.56.13.146:81/cdnlive/cctv17.m3u8
 
 山东文旅,video://https://v.iqilu.com/live/yspd/
@@ -88,7 +91,6 @@ CHC家庭影院,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chcjt
 
 # 其它频道
 央卫港澳台,#genre#
-纬来育乐,rtmp://f13h.mine.nu/sat/tv701
 农林卫视,http://gxlive.snrtv.com/nlws-SD.m3u8
 陕西新闻,http://gxlive.snrtv.com/sx1-SD.m3u8
 淘剧场,http://route.079915.xyz:4022/rtp/239.3.1.95:8001
@@ -110,7 +112,6 @@ ELTA综合,http://iptv.4666888.xyz/iptv2A.php?id=49
 爱奇艺,https://cdn3.indevs.in/stream/live/iqiyi/
 TVB星河,https://cdn3.indevs.in/stream/live/tvbxh/
 千禧经典台,https://cdn3.indevs.in/stream/live/tvbc/
-五星体育,https://cdn15.163189.xyz/163189/wxty
 民视影剧台,https://cdn12.178.indevs.in/163189/msyj
 公视戏剧,https://cdn12.178.indevs.in/163189/gsxj
 采昌影剧台,https://cdn12.178.indevs.in/163189/ccyj
