@@ -113,11 +113,10 @@ CCTV12,http://112.30.73.119:9901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=0&a
 CCTV12,http://112.30.73.119:9901/tsfile/live/1414_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV12,http://207.56.13.146:81/cdnlive/cctv12.m3u8
 CCTV12,http://192.151.150.154/live/cctv12hd.m3u8
-星河,http://139.159.221.112/jr.php?id=b93d84053bc86924a4a4e7c0f485c131&l=0
-星河,http://139.159.221.112/jr.php?id=b93d84053bc86924a4a4e7c0f485c131&l=1
 星河,https://cdn6.cc.cd/163189/tvbxh
 星河,https://10.fast.hidns.vip/163189/xinghe/
 纬来育乐,rtmp://f13h.mine.nu/sat/tv701
+纬来育乐,http://www.kaniptv.cn/uadl.php?etoken=lMl8H5iTJbyK%2FIL9Pi4lZQHnMdMgIpVLHHZ%2FO5maxtDIRUF%2BXNrDwvA%2BfKwjhElJW8p2pVbt17sMN6Xms5T%2Bje01WyUKwNI8M66wRbaNR9%2BuVR8dov4EaRVh0byPtSSYwt0DozqErfMHsBmTc5EDfFrShadc1z9fZ7tGAM%2FRnmmQEguiE4w3VlSeqx%2FLOzzSzW8eCTflDagJIzbdhYX6IsDw3%2BqAW1IbWn7rbOweD7x%2Bd4PbIxLSukdRW4%2BtjIiB30shg2WBNA3jst813jmN4Jq8Y99z2yJUp4qu%2FbdLQm8JR8HY04q6zOSZdlAROQiNQ5N2A3Z2J4FvvvERDChQW8eVM%2F2HvTY7sGg0kpqX33tM8iVzKAk%2BS%2FluEte0beWoFAhH1UfXTqOTWnAWdfOOkg%3D%3D
 CCTV15,http://111.29.9.33:6610/000000001000/1000000002000008163/index.m3u8?channel-id=bestzb&Contentid=1000000002000008163&livemode=1&stbId=3
 CCTV15,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226648/1.m3u8
 CCTV15,http://112.30.73.119:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0
@@ -129,7 +128,6 @@ CCTV15,http://192.151.150.154/live/cctv15hd.m3u8
 五星体育,https://live.264788.xyz/channel/wuxingtiyu?streamid=5d17da390f8e4805aae4a71868d4ef6c&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 五星体育,https://live.264788.xyz/channel/wuxingtiyu?streamid=bacdc88caa25b71b955f471072f07349&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 五星体育,https://live.264788.xyz/channel/wuxingtiyu?streamid=574ea4050333d6418edfd71d0df52f43&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-五星体育,video://https://live.kankanews.com/huikan?id=10
 CCTV17,http://111.29.9.33:6610/000000001000/1000000005000056836/index.m3u8?channel-id=bestzb&Contentid=1000000005000056836&livemode=1&stbId=3
 CCTV17,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226660/1.m3u8
 CCTV17,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226727/1.m3u8
@@ -137,19 +135,23 @@ CCTV17,http://112.30.73.119:9901/tsfile/live/1421_1.m3u8?key=txiptv&playlive=0&a
 CCTV17,http://207.56.13.146:81/cdnlive/cctv17.m3u8
 CCTV17,http://192.151.150.154/live/cctv17hd.m3u8
 山东文旅,video://https://v.iqilu.com/live/yspd/
-山东文旅,http://58.56.162.102:4466/newlive/live/hls/51/live.m3u8
+纬来电影,http://www.kaniptv.cn/uadl.php?etoken=67rNsqrNYoOqrw4mrhucIn%2Fb2C55%2B8R%2FabD%2FU5Pmyd1bLjao2U7CdBwhu41b%2BR%2BKQlgIwMgwDaVeofBfJAT4%2BOb1TXBNTo0l718EapQYwGKu5EoHfEgRPSgXbStlcm4WO9FzEIDlJ%2B%2B955AzQL4K%2BbkYrzo6mQtZj%2FcxGrF8hDs5aZpjLlh7Hq0wszAF2GSMC1516IJombUrGfMZFK51y1qIzfEnCzMV1vIKTx7DmGaAPsievVbG%2F%2F5QT%2B0lGQ2gtidmOXkDkrWtctEEY%2F0PAvngGeDWES%2BL%2FYoLtYnDgfTQa%2FRx%2F3UfoE0QjxJGMqn2Z5C6%2BPK%2FglKYRXn2GXTVgmBsLBJkWmaLAocb90fEyhKl4K2nWbn9rP9BhiZ%2BYGwEgrRixkPpQ89rVb65J41Cag%3D%3D
 天津文艺,http://38.75.136.137:98/gslb/dsdqpub/tjtv2.m3u8?auth=testpub
 天津文艺,http://192.151.150.154/live/tjtv2.m3u8
 北京文艺,http://m.061899.xyz/mg/bjwy
-北京文艺,http://114.242.62.109:888/hls/18/index.m3u8
+北京文艺,http://k.061899.xyz/k.php?id=bjwy
+北京文艺,http://45.192.97.170:8880/play/403.m3u8
 淘电影,http://api.kkhk.itv888.vip:8080/streams/6403327f992/index.m3u8
 淘电影,http://route.079915.xyz:4022/rtp/239.3.1.250:8001
 东森电影,https://smt.1678520.xyz/163189/dsdy
+东森电影,http://www.kaniptv.cn/uadl.php?etoken=R2QRkiXQKuGcO35rR2J94UHeb9Xcmc6felhvlmBG3GMhmDjrGeT7Wq0yTsKtTrfClkfcfKNgsjCEAEnT%2BpFHYzfRowB6c7OXh3v4FHzudR8yvmiEnzG7yAly4%2BOYdXGuS%2FG%2FmH5J8gW%2F6wne%2BqO2KkTdelpz2IC%2Bn%2FTwDkRShUHyJYxHip%2FCPyCZfXML6VeRgsijPSLkZ%2FVWWH64ImYvtZwLK%2B28Nv3V2Q400xAT7eGLj%2B3qDb9UgCGuI3Fj7SunfQA3TePqU8V5rb%2FI25RAx14er00omdC%2FBEJLLkqthbiLcskX0deonZCRzuta14W9%2BYjFELwQvl0jcoztF04uuW4Qefu%2BJ7UCm65zlU%2BXG9wmSw%2Fpl9QwOvpbG86aBHfBzCM0b09ZXZx9J2hvcAvsBA%3D%3D
 东森电影,http://iptv.4666888.xyz/iptv2A.php?id=48
 美亚电影,http://173.208.234.146/live/mymovie.m3u8
+美亚电影,http://www.kaniptv.cn/uadl.php?etoken=wm%2BBOWlfcx%2BfXVJCMTTwXCyalIjUfgTDlkUP4JBKye9qf9M%2BNrjChmuRjUtVHnVegxcXxf941T3dnZFWPcTeb%2FOU9B6E5xMbw7grJ2P%2Fqf%2BXUTLIlB%2BNMSBatZrPNWkAcV8av7M8upt01aFgLlYnu1c6nOCD7lF2YMMdIy3res9198euf8greZ%2Fvm3WFWnrWSNfBJIpwPAkEbrbxP9wHWpRLgI06jyw7Zr1Zhi2SDHMKwFEDEfZ3pNJaTa0DYhOPm5zA6VGkBVaK7lRrv37ueVK1sbZdQyp9w8F%2B6aUQvJBaUojFdlDcOf8WrLo1XAWA4Gwpw2m6ZgloTC6g%2BgWrx4rDhthtIA8bbmurxbkm3t1bON0Uy4Pw%2FExejQF8oNlK1uo1woh1wuizxh1ErFS7CQ%3D%3D
 天映频道,https://cdn3.indevs.in/stream/live/typd/
 天映频道,http://173.208.234.146/live/typd.m3u8
 龙华偶像,https://8.fast.hidns.vip/163189/lhox
+龙华偶像,http://www.kaniptv.cn/uadl.php?etoken=VcNbXLP9sbFxAqwepS5hl6jPwFWgyilwAcwc8u1RCQqQK4pgbrs7QjDheWvPf8sRo9XUzxsMRAeBYtAOcj9dPYoy5qg0orBX0Y8jrYPbk8NB%2F8vzcEDA5%2FL7P8TkKomrOJ2gRkUTzpwxG7LD3BSw6DXxJb80Q0vuuef7D0E6OgSqmwWBMxdW5iwC0jkftt0ORGsHiHn8OKx%2FccA2%2FlUW%2FAgx%2FKAKXZ3jPlg0tRu975MPTVzXEpcw3aEX0SQUT1ZBdRYzLwRRPLS8ju3Cg%2Blu8G0hTJYDdDbeormugfnDQlYE85LJ5UjSJHBhgqH6fHInMIFk6QL9VxLd%2Bb1B34OGbSd389yf2MUj%2BYE7C2mSnaDaEeJuvDvini2N05Q5APnRpVqt1MIrFKVbBUxNR7iE5g%3D%3D
 龙华偶像,http://rihou.cc:555/tv/[Pd]龙华偶像
 山东教育卫视,http://120.87.19.109:80/PLTV/88888973/224/3221225760/10000100000000060000000000336017_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=UoQbCSdhOfs+Fhzpjb+WON1faRQ9pU15SBx6EULzJM/q63EjPL5/UXSVfEKzDq3xI2a+0jNNPGEgjm5kZK/qSQWZ1F4+6A1eDkDeh5XZlpvpn23wIF+ldb6dnBPa8zHj,END&tenantId=8601
 山东教育卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226701/1.m3u8
@@ -228,6 +230,7 @@ CCTV17,http://192.151.150.154/live/cctv17hd.m3u8
 东方卫视,https://live.264788.xyz/channel/dongfangweishi?streamid=1d5fd57f18cd8a77af78ee5e1f479e70&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 东方卫视,https://live.264788.xyz/channel/dongfangweishi?streamid=d5d7da9b3bb6bae0fe51c654812c073a&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 东方卫视,http://192.151.150.154/live/dfwshd.m3u8
+东方卫视,http://207.56.13.146:81/cdnlive/dfws.m3u8
 江苏卫视,http://111.221.137.234:44330/tsfile/live/0135_1.m3u8?key=txiptv&playlive=0&authid=0
 江苏卫视,http://111.29.9.33:6610/000000001000/1000000001000001828/index.m3u8?channel-id=bestzb&Contentid=1000000001000001828&livemode=1&stbId=3
 江苏卫视,http://120.87.19.109:80/PLTV/88888973/224/3221225685/10000100000000060000000000333755_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=UoQbCSdhOfs+Fhzpjb+WON1faRQ9pU15SBx6EULzJM/q63EjPL5/UXSVfEKzDq3x8gF4mryrhqsqlbIuteHHNQWZ1F4+6A1eDkDeh5XZlpvpn23wIF+ldb6dnBPa8zHj,END&tenantId=8601
@@ -252,6 +255,7 @@ CCTV17,http://192.151.150.154/live/cctv17hd.m3u8
 江苏卫视,https://live.264788.xyz/channel/jiangsuweishi?streamid=a94278eea34cd01c27cbaca9f3c6e967&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 江苏卫视,https://live.264788.xyz/channel/jiangsuweishi?streamid=1f708c4111f88ab499c8ef73b9f30902&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 江苏卫视,http://192.151.150.154/live/jswshd.m3u8
+江苏卫视,http://207.56.13.146:81/cdnlive/jsws.m3u8
 北京卫视,http://111.221.137.234:44330/tsfile/live/0138_1.m3u8?key=txiptv&playlive=0&authid=0
 北京卫视,http://111.29.9.33:6610/000000001000/1000000001000017156/index.m3u8?channel-id=bestzb&Contentid=1000000001000017156&livemode=1&stbId=3
 北京卫视,http://120.87.19.109:80/PLTV/88888973/224/3221225688/10000100000000060000000000333853_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=UoQbCSdhOfs+Fhzpjb+WON1faRQ9pU15SBx6EULzJM/q63EjPL5/UXSVfEKzDq3xP1nCG8AWssDJrTAHC0A/mwWZ1F4+6A1eDkDeh5XZlpvpn23wIF+ldb6dnBPa8zHj,END&tenantId=8601
@@ -341,6 +345,7 @@ CCTV17,http://192.151.150.154/live/cctv17hd.m3u8
 辽宁卫视,https://live.264788.xyz/channel/liaoningweishi?streamid=11ca6a1856e4f7e06a1e824ae976604b&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 辽宁卫视,https://live.264788.xyz/channel/liaoningweishi?streamid=a5721d1b827b5abda39797171e2c1a53&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 辽宁卫视,http://218.13.148.152:5140/IPTV-%E5%8D%AB%E8%A7%86/%E8%BE%BD%E5%AE%81%E5%8D%AB%E8%A7%86
+辽宁卫视,http://m.061899.xyz/mg/lnws
 辽宁卫视,http://192.151.150.154/live/lnwshd.m3u8
 深圳卫视,http://nn.7x9d.cn/深圳最新.php?id=szws4k
 深圳卫视,http://111.221.137.234:44330/tsfile/live/1013_1.m3u8?key=txiptv&playlive=0&authid=0
@@ -570,7 +575,6 @@ CCTV17,http://192.151.150.154/live/cctv17hd.m3u8
 四川卫视,https://live.264788.xyz/channel/sichuanweishi?streamid=8a27b43e392baf21240c4b5a959652c7&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 四川卫视,https://live.264788.xyz/channel/sichuanweishi?streamid=3df085b8b20476f90cce113f7f2152e0&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 四川卫视,https://live.264788.xyz/channel/sichuanweishi?streamid=ee4e9252618099b2505fd3875394a5ba&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-四川卫视,http://218.13.148.152:5140/IPTV-卫视/四川卫视时移专用(四川卫视)?cors
 四川卫视,http://192.151.150.154/live/scwshd.m3u8
 山西卫视,http://120.87.19.109:80/PLTV/88888973/224/3221225677/10000100000000060000000000332983_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=UoQbCSdhOfs+Fhzpjb+WON1faRQ9pU15SBx6EULzJM/q63EjPL5/UXSVfEKzDq3xr2uxdyqzJKrAgGuP3tHlCQWZ1F4+6A1eDkDeh5XZlpvpn23wIF+ldb6dnBPa8zHj,END&tenantId=8601
 山西卫视,http://rrs03.hw.gmcc.net:8088/PLTV/651/224/3221226704/1.m3u8
@@ -586,7 +590,6 @@ CCTV17,http://192.151.150.154/live/cctv17hd.m3u8
 山西卫视,https://live.264788.xyz/channel/shanxiweishi?streamid=8e0686e725376b7a0d2079c0e2beb3dd&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 山西卫视,https://live.264788.xyz/channel/shanxiweishi?streamid=8b37a515ed8ef12821ad07167563e5e1&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 山西卫视,http://192.151.150.154/live/sxwshd.m3u8
-山西卫视,http://192.151.150.154/live/hbwshd.m3u8
 河南卫视,http://111.221.137.234:44330/tsfile/live/0136_1.m3u8?key=txiptv&playlive=0&authid=0
 河南卫视,http://111.29.9.33:6610/000000001000/5000000011000031119/index.m3u8?channel-id=bestzb&Contentid=5000000011000031119&livemode=1&stbId=3
 河南卫视,http://120.87.19.109:80/PLTV/88888973/224/3221225669/10000100000000060000000000331451_0.smil/01.m3u8?fmt=ts2hls,244,01.m3u8&accountinfo=UoQbCSdhOfs+Fhzpjb+WON1faRQ9pU15SBx6EULzJM/q63EjPL5/UXSVfEKzDq3xHloosjGQm0n2ol8ZhVnzywWZ1F4+6A1eDkDeh5XZlpvpn23wIF+ldb6dnBPa8zHj,END&tenantId=8601
@@ -742,11 +745,15 @@ CCTV17,http://192.151.150.154/live/cctv17hd.m3u8
 重温经典,http://rihou.cc:555/tv/[Pd]重温经典
 天映经典,https://10.fast.hidns.vip/163189/ccm/
 天映经典,https://cdn3.indevs.in/stream/live/ccm/
+天映经典,http://www.kaniptv.cn/uadl.php?etoken=noZjvr3W4W231fiK5HdD0QclzxODx5xaSvEy1QrPXSTcAscFg%2BAoAVJxlpGmxzKkM%2BSGmQpxoO9fUmeHQsmekydG0rDh8hhS%2Fc9B3yrEdJnF%2BRFZZrIg0R%2BROnkr87QEj0F4IEOqk5uSRqfysXuqW%2BcCuDIXD2dsFCy8w7Vjkt8afGNRzrsv0MaS%2Fsfv2dpYCh9alQzAt0iLtQrptfdVTVlkUlUmnonrWLpKTlstfPfVu325fYGwefmQCZmnMpVqTL2WAvh444DODCjtJohNcahY4alR2gTUvxk209XBOPJ5RSgcZTBB0w%2Fs8M%2Bsk%2FILzZG7cVhAVq10EDGCeCXWeb4GHacUqhJj0ZpBxWyQcqsmaPSCqE4v85A79eccWOhNy9RyHyU134EiCr5YCh3log%3D%3D
 靖洋戏剧,http://iptv.4666888.xyz/iptv2A.php?id=42
 龙华电影,https://8.fast.hidns.vip/163189/lhdy
+龙华电影,http://www.kaniptv.cn/uadl.php?etoken=S2qiRhWutr1E%2F4fCGCDW0jxiYWD%2F740HdDVlKc4SyX3SsteJdcu0cwuPp71taiavD1lF7AIBC%2FR6vH%2F51wGwN9JqqX767G4vk9Q69Xgsjw5oPqXmS0S6pBiGksPFMOD6kP5WO289Xd1W0FMS%2F7vCjZcYWfjXCbulVyewRyubxoMQ5F5gZAE8tfLADmd5aWCPOl2YPKPR3lEsLaa%2FHexEYkDVxMIOzBXh7VHNsL34hk49QEVK%2FU%2B%2BUmwZcktP651XPMBrH2FpmUjOa9kp54NmmBNHTyhINmvsz5sWKq41tiAFUrA1oLxtCc0Uf%2BNrZ2ovOW5hLbmJrG7PuALbcVotulIt0832Y1ebqMS5bmUZFLxbRke6LXlFsBLn1nxbe7a7HQXZEdnimm5XuD%2FMa1piCg%3D%3D
 龙华电影,http://iptv.4666888.xyz/iptv2A.php?id=45
 龙华经典,https://8.fast.hidns.vip/163189/lhjd
+龙华经典,http://www.kaniptv.cn/uadl.php?etoken=t%2FhpugHOlpqYPv374zVEyuIdcKs%2B7Zb%2FjX00Tv4RlrDamXFsngpeJrFlcXlkdZsgNuUTAxLn4pkumDAHML8iUSTI1%2FXfcZPqNMq1pgtjodZOcM9pCJYK1EddxOndMrnuPc6DpsX3ahKn2bU0z40bCB3UGSJ1oNkvEPK4sn3KWaOdmZr8QAiQo%2BA3Einnb91gzGItT%2FW3jlQjnqrpmhEe1paQn1aAKEfsr3ivqSxHQcuV8JQmsQTOmW6fFOfAEzJe9eYFGMWXlZX2Y6%2FqehS%2Fx3vjRE%2FmRmyL2V3PbTZe8O2n7xuuhR8QpJf9oHQDI9%2BAil%2BnlvEI9zRd2spXD%2BQb5seGLoaqGLit9O1uUpxfVS%2BN1gBOLbeVrUgCeWJ3dPKL4X8D8rn2jB35oFaoCUzRyQ%3D%3D
 龙华戏剧,https://8.fast.hidns.vip/163189/lhxj
+龙华戏剧,http://www.kaniptv.cn/uadl.php?etoken=k7crBKPkot6rhHxC2v5zG6Nqxfez2jUa31E8wmLES4OqqVfz2NPNhAdn5u%2BmHhfI0gYbULtqqZF7XNp%2BYNLjS7AnHTqILX3AZbJh0Ty6Lj%2FPtBEexyuNJ3YS8NoBlAKtpjVABQymxmkHzo%2B3ArDM7bjh9H1A0QMP5ChLP7FN6xc33l5str6mkRljpezQeriT2KtDnqDdbs9ICbwMrnWsPiLwFQI056JSHh7HWLzkG3njF4D0Wl8P8zSNgxzsDdpkE4XHSMswQ8HI%2BmrnCVbegTuhwD%2F97980HDAviR4xAS0d3eos203KGIg%2BsQQWzk8YiwrhGQuoiNisXaIp6WHAFmhnoNEtGEGevr6HWVzT5zVGD9TVpb0%2FEVPsSTluRYSy%2BP%2FhcY%2FQJsCed3WfQXl%2BFw%3D%3D
 峨眉电影,http://api.kkhk.itv888.vip:8080/streams/0558bdb0324/index.m3u8
 CHC影迷电影,http://go.bkpcp.top/mg/ymdy
 CHC影迷电影,http://k.061899.xyz/k.php?id=ymdy
@@ -791,6 +798,7 @@ CHC家庭影院,http://api.kkhk.itv888.vip:8080/streams/qja633ty8n/index.m3u8
 风云音乐,http://218.13.148.152:5140/IPTV-%E5%A4%AE%E8%A7%86%E7%BD%91%E5%8F%B0/%E9%A3%8E%E4%BA%91%E9%9F%B3%E4%B9%90
 云南都市,https://hwapi.yntv.net/62hdvf/rjwt14.m3u8
 云南娱乐,https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8
+龙祥电影,http://www.kaniptv.cn/uadl.php?etoken=HJN7JeYm8SkA%2Fpie1YlMLW9TqEQJNJIqr3EDGRD3bfixCJxSiSRRd%2FSgB41OviE0fbbqNI9LPi%2BdbX5oeOz3HBy5L1P8E%2BqpZMneEDuVAF0xWgOG0IS13n5D6mQcc2SLmhAiOTGgT4fBf1%2Fo2OhCQg7ILkPG%2FpRrCuoyCC5jr0XwoL6fvJRX0J0KMwCmsY7fEtYJ1L7NO2OQ%2BDJndcXDuhPmftCNWfUUHuLCzykpHTD99Xw%2BeJS0BgiSXvEGeKnJ7N72hdO6cmOA2YyzCQGQdAf%2FmIPBhDkEbE0K840Zu0MX%2BK%2FjMlUFXqTvvgDocgETykjnd1rZoy34oWFqA8M3zm1Rx2U%2B4a9GokiXZbDFXP%2FWpS%2BmFVWdyW7OHteMMQ%2BC9DFNWvQ6HpYWuCZ4nI0fZw%3D%3D
 农林卫视,http://gxlive.snrtv.com/nlws-SD.m3u8
 陕西新闻,http://gxlive.snrtv.com/sx1-SD.m3u8
 淘剧场,http://route.079915.xyz:4022/rtp/239.3.1.95:8001
@@ -799,6 +807,7 @@ CHC家庭影院,http://api.kkhk.itv888.vip:8080/streams/qja633ty8n/index.m3u8
 星影,http://route.079915.xyz:4022/rtp/239.3.1.94:4120
 黄金华剧台,http://iptv.4666888.xyz/iptv2A.php?id=34
 黄金华剧台,https://10.fast.hidns.vip/163189/hjhjt/
+ELTA综合,http://www.kaniptv.cn/uadl.php?etoken=6AE2ZJmwV6USM7T5JVFiiEvecq5T4aaHu2sUybpy6USpiYr6BEXsXJN4E3t5iqzMGVRFhUaLYXfR0hWgcjq2gjX6%2B%2B7G8qVkfaiBH0otC6DDThe5IhLJHVdxygakp4bUPDtoIxQVRVvnBOjwwf0cbmBGUkCUsUN54ci8Ld%2FVLRkXkai8BEFCP9Ll%2BLV99rf8%2BpRs17OcC80Hc1YqxGJYX7x0HLiegweexN5ccbqrE%2FgWPNaHnC2CQx6fDkMtI8J1lL63dIndrpYmE0opiS33bK4KZgctGHh%2Bu37tc5UIWjbp6LlrKthkppIboZo4YFSHdpLKqOiF9wepZmVR1KtWox%2F0279AvT8NuQMsCjkki4%2BOj6vi1tPCcVlu6XfUBVg0XLczDpXF9X7Dm%2FyluHE2KA%3D%3D
 ELTA综合,http://iptv.4666888.xyz/iptv2A.php?id=49
 河南电视剧,http://1.94.31.214/php/hntv.php?id=hndsj
 广西影视,http://38.75.136.137:98/gslb/dsdqpub/gxys.m3u8?auth=testpub
@@ -807,6 +816,7 @@ ELTA综合,http://iptv.4666888.xyz/iptv2A.php?id=49
 广西影视,http://198.204.228.26/live/gxys.m3u8
 广西影视,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gxys
 经典电影台,https://cdn12.178.indevs.in/163189/jddyt
+经典电影台,http://www.kaniptv.cn/uadl.php?etoken=LOv%2FTE5pcFJIMMRFyuWY4vjur1GwaLWJltIXItzYWaFRaOuMm368PdoW%2BOeMrigEZ9HlpjWjA9ZBwyXJpa1s2eULmzSYoprunauxdx5p1s3UzHhpzU1WytjJil8D5ZBQf3lH6bIWEDsjb7TqDH%2FuQv9fAIBFL4sCTSVwG4sAuiE4XN92iB7Q4yynHw2WafQ4RgviYeIopjcGp%2Fy%2Fl0IUDGvXCDGxrYe%2BWFm6X3dCGLfWzHNiIKOZkTnosKyveqtXANfLOZxYCuG0ystpfR8G8Ql2r4qfuQkqFKQOnc%2Fl0OSF7aTYN%2BQ7Mesq43aTgnz9wtYv78NAiVWHfQoCqQF5XNKWyAA0lIyoBcptT36PhK7FObfoNJOxMDji9fj%2FXjYn%2FMj4SHN9lpNB%2BcQYoSYo3Q%3D%3D
 经典电影台,https://cdn12.178.indevs.in/163189/61b8ea35ffce4630
 都市剧场,http://111.29.9.33:6610/000000001000/5000000011000031111/index.m3u8?channel-id=bestzb&Contentid=5000000011000031111&livemode=1&stbId=3
 都市剧场,https://live.264788.xyz/channel/dushijuchang?streamid=087bbd865ae84d7fe5c566127ffad8ee&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
@@ -816,6 +826,7 @@ ELTA综合,http://iptv.4666888.xyz/iptv2A.php?id=49
 湖南电影,http://36.137.183.45:1100/difang/hunan/hunan.php?id=hndy
 湖南电视剧,http://36.137.183.45:1100/difang/hunan/hunan.php?id=hndsj
 龙华洋片,https://8.fast.hidns.vip/163189/lhyp
+龙华洋片,http://www.kaniptv.cn/uadl.php?etoken=FhxfgzPhoK194ye4UU4syxSlHtDXQhnjS5k%2BYdgX2NsC%2Bl8SB0S3miQ7%2Bv4r1MOAam19LOrqX3qoXfgvBrqrq9jSIneQORevujCMGRp7OrpzTK5v77g8OJexEaR3idVjdi3ht76mbY%2BpG6QivFPTE6uKDGzRAPdd6rwFZqa%2F0jd0OOSP3JzMMO2Q6XnHIJ95aS82DNQ5dHsNlD75z5ZlUQqSdaVgy0yZdV5T9hR18qQxA8%2Fy1KO2CErZz%2Bl16yBf3%2F%2Bc8%2BLgTE1bPJnBOwVYlWScO66kC%2BU0MU2Mmffv9um9GMJfTD38bsT1ZUDRVRmYmucmXVSSno1wybsYoAg8Ayj0FFdKFy3203Sc3Jpv9Y6KpkF1EPdCYYWkDdi%2Fb06feSl0aKIKHZ73RxXlWPnLmg%3D%3D
 华丽翡翠台,https://cdn6.cc.cd/163189/hlfct
 华丽翡翠台,https://cdn3.indevs.in/stream/live/hlt/
 天映新加坡,https://10.fast.hidns.vip/163189/typd/
@@ -828,6 +839,7 @@ TVB星河,https://10.fast.hidns.vip/163189/xinghe/
 TVB星河,https://cdn3.indevs.in/stream/live/tvbxh/
 千禧经典台,https://cdn3.indevs.in/stream/live/tvbc/
 民视影剧台,https://cdn12.178.indevs.in/163189/msyj
+民视影剧台,http://www.kaniptv.cn/uadl.php?etoken=pea27WRCj6XZlIpBrCKD4q2Oyp5j7RrCq74HD9bS1lEzqXEyu5K0X31tmkMxfi%2F13gY1ML6cOhgzFRgmx1bwJrN%2BIx4O3OaqeOnsSQ7HPis%2B2JbvFzizCkXdy%2BfajvqRNspcCHKlzXhaAdP8mSJP6Fx5GeuhhPsV3KRVgaDug20ykuGj%2BBxAIMutkiV8XBJBmcBgyx2loMRn62aClFXnTlt2t7G5%2FUenqtI8vhKRxQK4OG2kzlYLyWEYe1aBula%2FGOwfLMCHE6ik%2BOD7SxeGbhTCzCSOpohr5iHHU34utmDUgAnFxumHkjJOJzi2YVbjOLS6NCgoJabAiC3GBhSAKCXSBu8WRDakn5UcoecT9ZbkLIqqevkIsz542m%2F1cRxmDCI8mT%2Fe1bktcbQqRbb7sw%3D%3D
 公视戏剧,https://cdn12.178.indevs.in/163189/gsxj
 采昌影剧台,https://cdn12.178.indevs.in/163189/ccyj
 靖天映画,https://cdn12.178.indevs.in/163189/jtyh
@@ -846,4 +858,6 @@ TVB星河,https://cdn3.indevs.in/stream/live/tvbxh/
 纬来戏剧台,https://smt.1678520.xyz/163189/wlxj
 纬来体育台,https://smt.1678520.xyz/163189/wlty
 龙祥时代,https://smt.1678520.xyz/163189/lxsd
+龙祥时代,http://www.kaniptv.cn/uadl.php?etoken=lHi7lQMSYWpGwuixXOMMBiIY1mWDMcYFJaZhsr0355r4Zi%2Bj%2Bowxo6u6KjTj2ktaLLDgfkXvwfCcNgn%2FuIhOcveu9HkJXUI%2B4fBiPZwuOdV5scjNnIxnDZ8FHQ2iQrA%2BafE8gOy6I31dM82RhzffIfdnjhO2WdpnpTsNgIr3ZYQgoUAgkzNie1uHh22%2BH9PjtR2%2BtqMY7sCBc334mU7anynLC4UV7aedp34tP8IFW%2B86BU0GkqfEuOMWswGTC%2BNm%2Fb%2BD5FMEOQoRWI7OLQL7nJZIFNAZIQCZbDu1SV%2BOywj9xqO4bT5sgCAUgdd4Qb3KNFs%2BMjBJitjOFkVOgI%2BLIwnB6qXNB%2FaWBLs5gjjAEI5fUAFRo7VjNP30N5JtmECQYuBCrQlEY1%2F95eXNwaDviA%3D%3D
 东森戏剧,https://smt.1678520.xyz/163189/dsxj
+东森戏剧,http://www.kaniptv.cn/uadl.php?etoken=wufDERwUryjBMtfRh%2BM321SB5lXPoMyggZtpp%2FbciaOBfiIlCgvdsl%2F%2FC8ltBnmwt8C8GkzeUr4QjV0nNZgE0EgHDK2oIH%2F0FSMA3nRNe89mVOEcFNL1RTr0GFb%2BSPz5H61avp5rDfOXicC8ZgHd3dfL4XaSZzuvBwTNP0oKUPQ46AUHdIUZVyJPHHOJDA38KjbrWlO4di3fSxZcwTgGgAWzsB8tU8gf9qcEzXCeUsYe0GjczaUOVikAGdvXRvUVow5inNVOoUgCXn9JHzxnLxfBTKfHzIc1jMXlgNJedZM8VvthQtVTr3UyRnhjSFH4MY7CYwxA%2FB9Zl1v5Ywo25IHi1UjtCPO46oAggWTXCixS9qW7HbHf%2FjW6kGWsDgCb77H4P80ltx%2Fbn54aSnApbA%3D%3D
