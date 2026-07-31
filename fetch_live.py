@@ -45,8 +45,9 @@ def load_txt(url):
         return []
 
 
-# 抓取剩余4个数据源（去掉原来url2）
+# 抓取全部5个数据源
 src1 = load_txt(url1)
+src2 = load_txt(url2)
 src3 = load_txt(url3)
 src4 = load_txt(url4)
 src5 = load_txt(url5)
@@ -121,33 +122,7 @@ TVB星河
 纬来电影台
 纬来戏剧台
 纬来体育台
-龙祥时代
-东森戏剧
-""".strip().splitlines()
 
-# 台名去重，保留顺序
-seen = set()
-order_lines = []
-for item in order_lines_raw:
-    it = item.strip()
-    if it == "":
-        continue
-    if it not in seen:
-        seen.add(it)
-        order_lines.append(it)
-
-
-out = []
-out.append("央卫港澳台,#genre#")
-
-# 只输出列表内存在的台，不在order_lines里的台全部丢弃
-for ch in order_lines:
-    if ch in channel:
-        for one_url in channel[ch]:
-            out.append(f"{ch},{one_url}")
-
-
-with open("qdyd.nzk", "w", encoding="utf-8") as f:
     f.write("\n".join(out))
 
 print("✅执行完成，输出qdyd.nzk，共4条数据源，已删除原第二条线路url2，仅保留配置列表中的频道，外部多余台全部舍弃")
