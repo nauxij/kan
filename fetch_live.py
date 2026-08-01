@@ -1,10 +1,14 @@
 import requests
+import re
 from collections import defaultdict
 
 # ==========你的配置============
 url1 = "https://gitee.com/x21y/yx/raw/main/qdyd.nzk"
 
 # --------------------------
+# 【提前定义全局变量，放在所有函数前面！】
+alias_map = {}
+
 # 山东广电频道网页映射 台名:网页地址
 sd_channel_web = {
     "山东文旅":"https://v.iqilu.com/live/yspd/",
@@ -40,6 +44,7 @@ def fetch_sdtv_live():
         except Exception as e:
             print(f"❌{ch_name}抓取异常 {e}")
     return out
+
 
 def fix_url(link):
     lnk = link.strip()
@@ -79,12 +84,19 @@ def load_txt(url):
         return []
 
 
-# 抓取全部5条数据源
+# ============ 主流程 =================
+# 1.抓取山东文旅实时源
+sd_result = fetch_sdtv_live()
+# 2.加载外部源
 src1 = load_txt(url1)
+# 合并数据源，实时抓取的山东文旅优先
+all_src = sd_result + src1
 
+# ✅必须在这里提前初始化！！之前放后面就会报channel未定义
+channel = defaultdict(list)
+all_got_names = set()
 
-
-for name, link in src1:
+for name, link in all_src:
     if link not in channel[name]:
         channel[name].append(link)
     all_got_names.add(name)
@@ -112,15 +124,6 @@ CCTV15
 五星体育
 CCTV17
 山东文旅
-纬来电影
-天津文艺
-北京文艺
-淘电影
-东森电影
-美亚电影
-天映频道
-龙华偶像
-山东教育卫视
 湖南卫视
 浙江卫视
 东方卫视
@@ -210,6 +213,13 @@ TVB星河
 order_list = [x.strip() for x in order_lines_raw.splitlines() if x.strip()]
 std_set = set(order_list)
 
+#打印陌生台名
+unknown = all_got_names - std_set
+if unknown:
+    print("\n=========【发现陌生台名】=========")
+    for u in sorted(unknown):
+        print(f'"{u}":"填你的标准台名",')
+    print("================================================\n")
 
 out = []
 for ch in order_list:
@@ -220,4 +230,4 @@ for ch in order_list:
 with open("qdyd.nzk","w",encoding="utf-8") as f:
     f.write("\n".join(out))
 
-print("✅执行完成，输出qdyd.nzk，共5条数据源，支持别名映射，仅保留配置列表中的频道，外部多余台全部舍弃")
+print("✅执行完成，输出qdyd.nzk；山东文旅实时抓取源已合并，排在order第21位；仅输出order列表内频道")
