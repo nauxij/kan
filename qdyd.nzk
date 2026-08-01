@@ -8,7 +8,6 @@ CHC动作电影,http://api.kkhk.itv888.vip:8080/streams/tbqrnwqrilg/index.m3u8
 CCTV3,http://207.56.13.146:81/cdnlive/cctv3.m3u8
 CCTV3,http://192.151.150.154/live/cctv3hd.m3u8
 CCTV5,http://207.56.13.146:81/cdnlive/cctv5.m3u8
-CCTV5,http://218.13.148.152:5140/IPTV-央视/CCTV-5?cors
 CCTV5+,http://207.56.13.146:81/cdnlive/cctv5p.m3u8
 CCTV5+,http://107.150.60.122/live/cctv5p.m3u8
 央视台球,http://207.56.13.146:81/cdnlive/ystq.m3u8
@@ -41,6 +40,7 @@ CCTV17,http://192.151.150.154/live/cctv17hd.m3u8
 淘电影,http://api.kkhk.itv888.vip:8080/streams/6403327f992/index.m3u8
 淘电影,http://route.079915.xyz:4022/rtp/239.3.1.250:8001
 东森电影,http://iptv.4666888.xyz/iptv2A.php?id=48
+东森电影,http://www.kaniptv.cn/uadl.php?etoken=R2QRkiXQKuGcO35rR2J94UHeb9Xcmc6felhvlmBG3GMhmDjrGeT7Wq0yTsKtTrfClkfcfKNgsjCEAEnT%2BpFHYzfRowB6c7OXh3v4FHzudR8yvmiEnzG7yAly4%2BOYdXGuS%2FG%2FmH5J8gW%2F6wne%2BqO2KkTdelpz2IC%2Bn%2FTwDkRShUHyJYxHip%2FCPyCZfXML6VeRgsijPSLkZ%2FVWWH64ImYvtZwLK%2B28Nv3V2Q400xAT7eGLj%2B3qDb9UgCGuI3Fj7SunfQA3TePqU8V5rb%2FI25RAx14er00omdC%2FBEJLLkqthbiLcskX0deonZCRzuta14W9%2BYjFELwQvl0jcoztF04uuW4Qefu%2BJ7UCm65zlU%2BXG9wmSw%2Fpl9QwOvpbG86aBHfBzCM0b09ZXZx9J2hvcAvsBA%3D%3D
 东森电影,https://smt.1678520.xyz/163189/dsdy
 美亚电影,http://173.208.234.146/live/mymovie.m3u8
 天映频道,https://cdn3.indevs.in/stream/live/typd/
@@ -121,6 +121,7 @@ ELTA综合,http://iptv.4666888.xyz/iptv2A.php?id=49
 广西影视,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gxys
 广西影视,http://107.150.60.122/live/gxys.m3u8
 经典电影台,https://cdn12.178.indevs.in/163189/61b8ea35ffce4630
+都市剧场,http://60.177.201.148:9999/%E4%BB%98%E8%B4%B9/%E9%83%BD%E5%B8%82%E5%89%A7%E5%9C%BA
 都市剧场,https://live.264788.xyz/channel/dushijuchang?streamid=fd36352c039198fe0978687774e97e59&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 湖南电影,http://36.137.183.45:1100/difang/hunan/hunan.php?id=hndy
 湖南电视剧,http://36.137.183.45:1100/difang/hunan/hunan.php?id=hndsj
