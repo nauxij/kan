@@ -1,8 +1,9 @@
 name: fetch2
 on:
-  workflow_dispatch:
+  workflow_dispatch:    # 注意！往前退一格，和schedule对齐
   schedule:
     - cron: '0 1 * * *'
+
 permissions:
   contents: write
 
@@ -29,5 +30,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add qdyd.txt
-          git commit -m "auto update $(date +'%Y-%m-%d %H:%M')"    echo "内容无变化，跳过提交"
+          git commit -m "auto update $(date +'%Y-%m-%d %H:%M')" || echo "内容无变化，跳过提交"
           git push
+
