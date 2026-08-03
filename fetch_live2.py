@@ -4,7 +4,7 @@ import os
 from collections import defaultdict
 
 # ==========你的配置============
-url1 = "https://gitee.com/x21y/yx/raw/main/qdyd.nzk"
+url1 = "https://nauxij.github.io/qdyd.nzk"
 
 # --------------------------
 alias_map = {}
