@@ -5,7 +5,7 @@ from collections import defaultdict
 
 # ==========你的配置============
 # 修改为Gitee源地址
-url1 = "https://gitee.com/x21y/yx/raw/main/qdyd.nzk"
+url1 = "https://gitee.com/x21y/yx/raw/main/qdyd.txt"
 
 # --------------------------
 alias_map = {}
