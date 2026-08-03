@@ -1,10 +1,11 @@
 import requests
 import re
+import os
 from collections import defaultdict
 
 # ==========你的配置============
-# GitHub raw 地址，替换成你自己仓库
-url1 = "https://raw.githubusercontent.com/x21y/yx/main/qdyd.nzk"
+# 修改为Gitee源地址
+url1 = "https://gitee.com/x21y/yx/raw/main/qdyd.nzk"
 
 # --------------------------
 alias_map = {}
@@ -30,7 +31,11 @@ def get_std_name(raw_name):
 
 def load_txt(url):
     try:
-        resp = requests.get(url, timeout=25)
+        # Gitee增加请求头，防止403拦截
+        headers = {
+            "User‑Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        }
+        resp = requests.get(url, headers=headers, timeout=25)
         resp.encoding = "utf-8"
         text = resp.text
         res = []
@@ -51,7 +56,6 @@ def load_txt(url):
 
 
 # ============ 主流程 =================
-# 只加载外部源，删除山东文旅网页抓取
 src1 = load_txt(url1)
 all_src = src1
 
@@ -384,7 +388,18 @@ for ch in order_list:
     for l in links:
         out.append(f"{ch},{l}")
 
-with open("qdyd.nzk","w",encoding="utf-8") as f:
+
+# =====调试输出部分=====
+filename = "qdyd.nzk"
+print("===调试信息===")
+print("当前工作目录：", os.getcwd())
+
+with open(filename,"w",encoding="utf-8") as f:
     f.write("\n".join(out))
+
+print("文件是否存在：", os.path.exists(filename))
+if os.path.exists(filename):
+    print("文件大小字节：", os.path.getsize(filename))
+print("==============")
 
 print("✅执行完成，输出qdyd.nzk；仅输出order列表内频道")
