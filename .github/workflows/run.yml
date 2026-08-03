@@ -1,33 +1,43 @@
-name: 每日更新qdyd.txt
+name: 频道源自动更新
 on:
-  schedule:
-    - cron: '0 18 * * *'
   workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *'  # UTC08点 = 北京时间16点
+  push:
+    branches: [ main ]
 
 jobs:
-  run-task:
+  run_fetch:
     runs-on: ubuntu-latest
+    env:
+      PYTHONIOENCODING: utf-8
+    permissions:
+      contents: write
     steps:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: 设置Python环境
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.11"
 
-      - name: 安装requests
+      - name: 安装依赖 requests
         run: pip install requests
 
-      - name: 读取远程txt并排序
-        run: python fetch_live2.py
+      - name: 执行抓取脚本 fetch_live2.py
+        run: python3 fetch_live2.py
 
-      - name: 强制提交更新
+      - name: 提交并推送 qdyd.nzk
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add qdyd.txt
-          git commit -m "🤖自动更新 qdyd.txt $(date '+%Y-%m-%d')"
-          git push
+          git config --global user.name "github‑actions[bot]"
+          git config --global user.email "github‑actions[bot]@users.noreply.github.com"
+          git add qdyd.nzk
+          git status
+          if [[ -n $(git status --porcelain) ]]; then
+              git commit -m "auto update qdyd.nzk $(date +'%Y-%m-%d %H:%M')"
+              git push
+          else
+              echo "✅ 文件没有更新，跳过提交，任务完成"
+          fi
+
