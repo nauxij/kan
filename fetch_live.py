@@ -9,50 +9,11 @@ url1 = "https://raw.githubusercontent.com/x21y/yx/main/qdyd.nzk"
 # --------------------------
 alias_map = {}
 
-# 山东广电频道网页映射 台名:网页地址
-sd_channel_web = {
-    "山东文旅":"https://v.iqilu.com/live/yspd/",
-}
-
-def fetch_sdtv_live():
-    """抓取山东广电实时有效m3u8直播流"""
-    out = []
-    headers = {
-        "User‑Agent":"Mozilla/5.0 (Android)",
-        "Referer":"https://v.iqilu.com/"
-    }
-    for ch_name,page_url in sd_channel_web.items():
-        try:
-            resp = requests.get(page_url,headers=headers,timeout=20)
-            resp.raise_for_status()
-            html = resp.text
-            api_match = re.search(r'["\'](/api/getPlayUrl[^"\']+)["\']',html)
-            if not api_match:
-                print(f"⚠️{ch_name}：未找到播放api接口")
-                continue
-            api_path = api_match.group(1)
-            api_full = "https://v.iqilu.com" + api_path
-            r2 = requests.get(api_full,headers=headers,timeout=15)
-            r2.raise_for_status()
-            play_json = r2.json()
-            real_m3u8 = play_json.get("data",{}).get("url")
-            if real_m3u8:
-                # 去除 video:// 前缀
-                if real_m3u8.startswith("video://"):
-                    real_m3u8 = real_m3u8[8:]
-                out.append((ch_name,real_m3u8))
-                print(f"✅{ch_name} 获取直播流成功：{real_m3u8}")
-            else:
-                print(f"⚠️{ch_name} api返回没有url")
-        except Exception as e:
-            print(f"❌{ch_name}抓取异常 {e}")
-    return out
-
 
 def fix_url(link):
     lnk = link.strip()
     if lnk.startswith("video://"):
-        lnk = lnk = lnk[8:]
+        lnk = lnk[8:]
     if lnk.startswith(("rtmp://")):
         return lnk
     if lnk.startswith("//"):
@@ -90,12 +51,9 @@ def load_txt(url):
 
 
 # ============ 主流程 =================
-# 1.抓取山东文旅实时源
-sd_result = fetch_sdtv_live()
-# 2.加载外部源
+# 只加载外部源，删除山东文旅网页抓取
 src1 = load_txt(url1)
-# 合并数据源，实时抓取的山东文旅优先
-all_src = sd_result + src1
+all_src = src1
 
 channel = defaultdict(list)
 all_got_names = set()
@@ -429,4 +387,4 @@ for ch in order_list:
 with open("qdyd.nzk","w",encoding="utf-8") as f:
     f.write("\n".join(out))
 
-print("✅执行完成，输出qdyd.nzk；山东文旅实时抓取源已合并，排在order第21位；仅输出order列表内频道")
+print("✅执行完成，输出qdyd.nzk；仅输出order列表内频道")
