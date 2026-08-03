@@ -2,10 +2,8 @@
 name: 定时抓取更新qdyd.nzk
 on:
   schedule:
-    # 北京时间：05点、11点、17点
+    # 北京时间：05点
     - cron: '0 21 * * *'   # 北京05:00 (UTC 21点，前一日)
-    - cron: '0 3 * * *'    # 北京11:00 (UTC 03点)
-    - cron: '0 9 * * *'    # 北京17:00 (UTC 09点)
   workflow_dispatch:
 
 jobs:
