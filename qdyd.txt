@@ -6,6 +6,7 @@
 凤凰香港,http://php.jdshipin.com:8880/smt.php?id=hkphoenix_twn
 凤凰香港,P2p://starvod.xyz:19806/cf6ac5da2528430da34c4beab4b2f07f.ts
 凤凰香港,https://cdn6.101.qzz.io/163189/fhhk
+凤凰香港,http://ccav.zone.id/php/fh.php?id=3
 凤凰香港,https://cdn.qd.je/163189.php?id=fhhk
 凤凰香港,http://rihou.cc:555/tv/[Pd]凤凰香港
 凤凰香港,P2p://107.150.42.186:33001/71e6d0e4f7bb145d49ccafe3dd81dc5e
@@ -51,7 +52,7 @@ CCTV3,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv3
 CCTV3,http://39.165.39.49:19901/tsfile/live/1003_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV3,http://119.233.255.62:1234/624878271
 CCTV3,http://222.134.19.49:8090/624878271
-CCTV3,http://74.91.26.218:82/live/cctv3hd.m3u8
+CCTV3,http://223.78.65.165:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV3,http://www.rogerxlj.top:9998/rtp/233.18.204.22:5140
 CCTV3,http://www.rogerxlj.top:9998/rtp/233.18.204.69:5140
 CCTV3,http://yun.lei119911.xyz:5488/rtp/233.18.204.22:5140
@@ -93,7 +94,7 @@ CCTV5,P2p://starvod.xyz:19806/835f5ef59532485cb898801bb4e6ecb5
 CCTV5,P2p://starvod.xyz:19806/487f69e2ba1c453b842a2b839abf3c46.ts
 CCTV5,http://119.233.255.62:1234/641886683
 CCTV5,http://222.134.19.49:8090/641886683
-CCTV5,http://74.91.26.218:82/live/cctv5hd.m3u8
+CCTV5,http://223.78.65.165:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV5,http://www.rogerxlj.top:9998/rtp/233.18.204.24:5140
 CCTV5,http://www.rogerxlj.top:9998/rtp/233.18.204.71:5140
 CCTV5,http://yun.lei119911.xyz:5488/rtp/233.18.204.24:5140
@@ -123,7 +124,6 @@ CCTV5+,P2p://starvod.xyz:19806/68a858970004f871a1de820954554371
 CCTV5+,P2p://starvod.xyz:19806/4e70134e7a1d46438444e155f93f03d6.ts
 CCTV5+,http://119.233.255.62:1234/641886773
 CCTV5+,http://222.134.19.49:8090/641886773
-CCTV5+,http://74.91.26.218:82/live/cctv5p.m3u8
 CCTV5+,http://www.rogerxlj.top:9998/rtp/233.18.204.67:5140
 CCTV5+,http://yun.lei119911.xyz:5488/rtp/233.18.204.67:5140
 CCTV5+,http://demo.medrun.cn:4022/rtp/233.18.204.67:5140
@@ -163,7 +163,7 @@ CCTV6,http://39.165.39.49:19901/tsfile/live/1006_1.m3u8?key=txiptv&playlive=0&au
 CCTV6,P2p://starvod.xyz:19806/553a57a0561b4fc1b82d51e3a782adc1.ts
 CCTV6,http://119.233.255.62:1234/624878396
 CCTV6,http://222.134.19.49:8090/624878396
-CCTV6,http://74.91.26.218:82/live/cctv6hd.m3u8
+CCTV6,http://223.78.65.165:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV6,https://www.9kds.com/d/1905.php?t=1&id=LIVE8J4LTCXPI7QJ5_261&kl=www.9kds.com
 CCTV6,https://www.9kds.com/d/1905.php?t=1&id=LIVEOYY31H24H48NE&kl=www.9kds.com
 CCTV6,http://www.rogerxlj.top:9998/rtp/233.18.204.25:5140
