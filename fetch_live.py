@@ -3,10 +3,10 @@ import re
 from collections import defaultdict
 
 # ==========你的配置============
-url1 = "https://gitee.com/x21y/yx/raw/main/qdyd.nzk"
+# GitHub raw 地址，替换成你自己仓库
+url1 = "https://raw.githubusercontent.com/x21y/yx/main/qdyd.nzk"
 
 # --------------------------
-# 【提前定义全局变量，放在所有函数前面！】
 alias_map = {}
 
 # 山东广电频道网页映射 台名:网页地址
@@ -37,8 +37,11 @@ def fetch_sdtv_live():
             play_json = r2.json()
             real_m3u8 = play_json.get("data",{}).get("url")
             if real_m3u8:
+                # 去除 video:// 前缀
+                if real_m3u8.startswith("video://"):
+                    real_m3u8 = real_m3u8[8:]
                 out.append((ch_name,real_m3u8))
-                print(f"✅{ch_name} 获取直播流成功")
+                print(f"✅{ch_name} 获取直播流成功：{real_m3u8}")
             else:
                 print(f"⚠️{ch_name} api返回没有url")
         except Exception as e:
@@ -48,7 +51,9 @@ def fetch_sdtv_live():
 
 def fix_url(link):
     lnk = link.strip()
-    if lnk.startswith(("video://", "rtmp://")):
+    if lnk.startswith("video://"):
+        lnk = lnk = lnk[8:]
+    if lnk.startswith(("rtmp://")):
         return lnk
     if lnk.startswith("//"):
         lnk = "http:" + lnk
@@ -92,7 +97,6 @@ src1 = load_txt(url1)
 # 合并数据源，实时抓取的山东文旅优先
 all_src = sd_result + src1
 
-# ✅必须在这里提前初始化！！之前放后面就会报channel未定义
 channel = defaultdict(list)
 all_got_names = set()
 
