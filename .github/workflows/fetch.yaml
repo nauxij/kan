@@ -1,36 +1,42 @@
-
-name: 定时抓取更新qdyd.nzk
+name: Generate qdyd.txt
 on:
-  schedule:
-    # 北京时间：05点
-    - cron: '0 21 * * *'   # 北京05:00 (UTC 21点，前一日)
   workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *'
+  push:
+    branches: [ main ]
 
 jobs:
-  run_fetch:
+  build:
     runs-on: ubuntu-latest
-    env:
-      PYTHONIOENCODING: utf-8
+    permissions:
+      contents: write  # 必须开启写权限，否则无法推送
     steps:
-      - name: 拉取仓库代码
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: 设置 Python 3.10
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.11"
 
-      - name: 安装依赖 requests
+      - name: Install dependencies
         run: pip install requests
 
-      - name: 执行抓取脚本
-        run: python3 fetch_live.py
+      - name: Run generate script
+        run: python3 gen.py
 
-      - name: 提交并推送文件
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit & push
         run: |
-            git config --global user.name "github‑actions[bot]"
-            git config --global user.email "github‑actions[bot]@users.noreply.github.com"
-            git add qdyd.nzk
-            git diff --quiet && git diff --staged --quiet || (git commit -m "auto update $(date +'%Y-%m-%d %H:%M')" && git push)
+          git config --global user.name "github‑actions[bot]"
+          git config --global user.email "github‑actions[bot]@users.noreply.github.com"
+          git add qdyd.txt
+          git status
+          # 有变更就提交推送，无变更直接跳过不报错
+          if [[ -n $(git status --porcelain) ]]; then
+              git commit -m "auto update qdyd.txt"
+              git push
+          else
+              echo "文件无更新，跳过提交"
+          fi
+
