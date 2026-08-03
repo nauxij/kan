@@ -313,7 +313,7 @@ def sort_channels(channels):
 
 
 def fetch_file():
-    url = "https://mirror.ghproxy.com/https://gitee.com/x21y/yx/raw/main/qdyd.txt"
+    url = "https://gitee.com/x21y/yx/raw/main/qdyd.txt"
     out_file = "qdyd.txt"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
