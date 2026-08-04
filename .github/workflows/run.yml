@@ -1,4 +1,4 @@
-name: 频道源自动更新
+name: json用
 on:
   workflow_dispatch:
   schedule:
@@ -28,12 +28,12 @@ jobs:
       - name: 执行抓取脚本 fetch_live2.py
         run: python3 fetch_live2.py
 
-      - name: 提交并推送 qdyd.nzk【强制提交】
+      - name: 提交并推送 qdyd.txt【强制提交】
         run: |
           git config --global user.name "github‑actions[bot]"
           git config --global user.email "github‑actions[bot]@users.noreply.github.com"
-          git add qdyd.nzk
+          git add qdyd.txt
           git status
-          git commit --allow-empty -m "auto update qdyd.nzk $(date +'%Y‑%m‑%d %H:%M')"
+          git commit --allow-empty -m "auto update qdyd.txt $(date +'%Y‑%m‑%d %H:%M')"
           git push
 
