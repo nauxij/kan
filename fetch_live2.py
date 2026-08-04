@@ -362,4 +362,4 @@ with open("qdyd.nzk","w",encoding="utf-8") as f:
     f.write("\n".join(out))
 
 
-print("✅执行完成，输出qdyd.nzk，关闭别名&模糊匹配，严格按指定顺序输出，只输出列表内存在的频道")
+print("✅执行完成，输出qdyd.txt，关闭别名&模糊匹配，严格按指定顺序输出，只输出列表内存在的频道")
