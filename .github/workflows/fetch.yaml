@@ -1,6 +1,6 @@
 name: Fetch Live Source
 on:
-  workflow_dispatch:   # 支持手动点击运行
+  workflow_dispatch:  # 支持手动点击运行
   schedule:
     - cron: '0 22 * * *'  # UTC22:00 → 北京时间次日06:00
   push:
@@ -8,37 +8,32 @@ on:
 
 jobs:
   run_fetch:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu‑latest
     env:
-      PYTHONIOENCODING: utf-8  # 防止中文台名乱码
+      PYTHONIOENCODING: utf‑8  # 防止中文台名乱码
     permissions:
-      contents: write   # 必须开启，允许bot提交推送文件
+      contents: write  # 必须开启，允许bot提交推送文件
     steps:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
       - name: 设置Python环境
-        uses: actions/setup-python@v5
+        uses: actions/setup‑python@v5
         with:
-          python-version: "3.11"
+          python‑version: "3.11"
 
       - name: 安装依赖 requests
         run: pip install requests
 
-      - name: 执行抓取脚本 fetch_live.py
-        run: python3 fetch_live.py
+      - name: 执行抓取脚本 fetch_live2.py
+        run: python3 fetch_live2.py
 
-      - name: 提交并推送 qdyd.txt
+      - name: 提交并推送 qdyd.nzk（强制提交）
         run: |
           git config --global user.name "github‑actions[bot]"
           git config --global user.email "github‑actions[bot]@users.noreply.github.com"
-          git add qdyd.txt
+          git add qdyd.nzk
           git status
-          # 判断是否存在文件变更，有变更就提交推送；无变更直接跳过，不报错
-          if [[ -n $(git status --porcelain) ]]; then
-              git commit -m "auto update qdyd.txt $(date +'%Y-%m-%d %H:%M')"
-              git push
-          else
-              echo "✅ 文件没有更新，跳过提交，任务完成"
-          fi
-
+          # --allow-empty：即使文件没有改动，也强制生成提交
+          git commit --allow-empty -m "auto update qdyd.nzk $(date +'%Y‑%m‑%d %H:%M')"
+          git push
