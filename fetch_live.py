@@ -218,4 +218,4 @@ for ch in order_list:
 with open("qdyd.txt","w",encoding="utf-8") as f:
     f.write("\n".join(out))
 
-print("✅执行完成，输出qdyd.txt，共5条数据源，优先精确别名+关键词模糊匹配，仅保留配置列表中的频道，外部多余台全部舍弃")
+print("✅执行完成，输出qdyd.nzk，共5条数据源，优先精确别名+关键词模糊匹配，仅保留配置列表中的频道，外部多余台全部舍弃")
