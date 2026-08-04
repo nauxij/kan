@@ -8,9 +8,9 @@ on:
 
 jobs:
   run_fetch:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu‑latest
     env:
-      PYTHONIOENCODING: utf-8
+      PYTHONIOENCODING: utf‑8
     permissions:
       contents: write
     steps:
@@ -18,9 +18,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 设置Python环境
-        uses: actions/setup-python@v5
+        uses: actions/setup‑python@v5
         with:
-          python-version: "3.11"
+          python‑version: "3.11"
 
       - name: 安装依赖 requests
         run: pip install requests
@@ -28,16 +28,12 @@ jobs:
       - name: 执行抓取脚本 fetch_live2.py
         run: python3 fetch_live2.py
 
-      - name: 提交并推送 qdyd.nzk
+      - name: 提交并推送 qdyd.nzk【强制提交】
         run: |
           git config --global user.name "github‑actions[bot]"
           git config --global user.email "github‑actions[bot]@users.noreply.github.com"
           git add qdyd.nzk
           git status
-          if [[ -n $(git status --porcelain) ]]; then
-              git commit -m "auto update qdyd.nzk $(date +'%Y-%m-%d %H:%M')"
-              git push
-          else
-              echo "✅ 文件没有更新，跳过提交，任务完成"
-          fi
+          git commit --allow-empty -m "auto update qdyd.nzk $(date +'%Y‑%m‑%d %H:%M')"
+          git push
 
