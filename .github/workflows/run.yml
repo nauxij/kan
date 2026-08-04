@@ -2,7 +2,7 @@ name: 频道源自动更新
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 8 * * *'  # UTC08点 = 北京时间16点
+    - cron: '0 22 * * *'  # UTC22:00 → 北京时间次日06:00
   push:
     branches: [ main ]
 
