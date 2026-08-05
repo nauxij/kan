@@ -2,7 +2,7 @@ name: json用
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 22 * * *'  # UTC22:00 → 北京时间次日06:00
+    - cron: '0 21 * * *'  # UTC21:00 → 北京时间次日05:00
   push:
     branches: [ main ]
 
