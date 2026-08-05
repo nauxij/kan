@@ -357,8 +357,8 @@ for ch in order_list:
     for l in links:
         out.append(f"{ch},{l}")
 
-#输出 qdyd.nzk
-with open("qdyd.nzk","w",encoding="utf-8") as f:
+#输出 qdyd.txt
+with open("qdyd.txt","w",encoding="utf-8") as f:
     f.write("\n".join(out))
 
 
