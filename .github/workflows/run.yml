@@ -1,16 +1,22 @@
 name: json用
+# 新增并发控制，防止任务堆积排队
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 21 * * *'  # UTC21:00 → 北京时间次日05:00
+    # 原：0 21 * * *（UTC21:00 早5点）整点依然容易拥堵，改成冷门分位
+    - cron: '32 21 * * *'
   push:
     branches: [ main ]
 
 jobs:
   run_fetch:
-    runs-on: ubuntu‑latest
+    runs-on: ubuntu-latest
     env:
-      PYTHONIOENCODING: utf‑8
+      PYTHONIOENCODING: utf-8
     permissions:
       contents: write
     steps:
@@ -18,9 +24,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 设置Python环境
-        uses: actions/setup‑python@v5
+        uses: actions/setup-python@v5
         with:
-          python‑version: "3.11"
+          python-version: "3.11"
 
       - name: 安装依赖 requests
         run: pip install requests
@@ -30,10 +36,11 @@ jobs:
 
       - name: 提交并推送 qdyd.txt【强制提交】
         run: |
-          git config --global user.name "github‑actions[bot]"
-          git config --global user.email "github‑actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add qdyd.txt
           git status
-          git commit --allow-empty -m "auto update qdyd.txt $(date +'%Y‑%m‑%d %H:%M')"
-          git push
+          git commit --allow-empty -m "auto update qdyd.txt $(date +'%Y-%m-%d %H:%M')"
+          # 关键优化：替换普通git push，避免代码冲突推送失败
+          git push --force-with-lease
 
