@@ -1,0 +1,22 @@
+name: 自动清空Action日志
+on:
+  workflow_dispatch:
+jobs:
+  clean_all:
+    runs-on: ubuntu-latest
+    steps:
+      # 1、清空：港澳台更新
+      - name: 删除【港澳台更新】全部记录
+        uses: gitrml/delete-workflow-runs@v2
+        with:
+          repository: ${{ github.repository }}
+          workflow_name: "港澳台更新"
+          retain_days: 0
+
+      # 2、清空：json用
+      - name: 删除【json用】全部记录
+        uses: gitrml/delete-workflow-runs@v2
+        with:
+          repository: ${{ github.repository }}
+          workflow_name: "json用"
+          retain_days: 0
