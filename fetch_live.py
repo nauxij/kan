@@ -4,7 +4,7 @@ from collections import defaultdict
 # ==========你的配置============
 url1 = "https://gh-proxy.org/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
 # 删掉 url2、url3、url5（境外无法访问），只保留 url1、url4
-url4 = "https://gh-proxy.org/https://raw.githubusercontent.com/807080747/zv/refs/heads/main/sese.txt"
+url4 = "http://47.120.41.246:8899/xinzb.txt"
 # ==============================
 
 # --------------------------
