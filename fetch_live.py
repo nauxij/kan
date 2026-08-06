@@ -2,7 +2,7 @@ import requests
 from collections import defaultdict
 
 # ==========你的配置============
-url1 = "https://gh-proxy.org/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+url1 = "http://wangziduoqing.com/yuan/zb.txt"
 # 删掉 url2、url3、url5（境外无法访问），只保留 url1、url4
 url4 = "http://47.120.41.246:8899/xinzb.txt"
 # ==============================
