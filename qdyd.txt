@@ -119,7 +119,8 @@ ELTA综合,http://iptv.4666888.xyz/iptv2A.php?id=49
 广西影视,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gxys
 广西影视,http://107.150.60.122/live/gxys.m3u8
 经典电影台,https://cdn12.178.indevs.in/163189/61b8ea35ffce4630
-都市剧场,http://60.177.201.148:9999/%E4%BB%98%E8%B4%B9/%E9%83%BD%E5%B8%82%E5%89%A7%E5%9C%BA
+都市剧场,http://www.rogerxlj.top:9998/rtp/233.18.204.48:5140
+都市剧场,http://demo.medrun.cn:4022/rtp/233.18.204.48:5140
 都市剧场,https://live.264788.xyz/channel/dushijuchang?streamid=fd36352c039198fe0978687774e97e59&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 湖南电影,http://107.150.60.122/live/hndy.m3u8
 湖南电视剧,http://107.150.60.122/live/hndsj.m3u8
