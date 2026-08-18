@@ -8,7 +8,7 @@ url_list = [
     "https://gh-proxy.org/https://raw.githubusercontent.com/nauxij/kan/refs/heads/main/qdyd.txt",
     "https://gh-proxy.org/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
     "https://gh-proxy.org/https://raw.githubusercontent.com/807080747/zv/refs/heads/main/sese.txt",
-    "http://wangziduoqing.com/yuan/zb.txt",
+    "http://tv123.vvvv.ee/tv.m3u",
     "http://rihou.cc:567/gggg.nzk"
 ]
 # ==========================================================
