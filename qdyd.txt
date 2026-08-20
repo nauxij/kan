@@ -26,6 +26,7 @@ CCTV12,http://207.56.13.146:81/cdnlive/cctv12.m3u8
 CCTV12,http://192.151.150.154/live/cctv12hd.m3u8
 星河,https://cdn6.cc.cd/163189/tvbxh
 星河,https://10.fast.hidns.vip/163189/xinghe/
+星河,https://cdn3.indevs.in/stream/live/tvbxh/
 纬来育乐,rtmp://f13h.mine.nu/sat/tv701
 CCTV15,http://207.56.13.146:81/cdnlive/cctv15.m3u8
 CCTV15,http://192.151.150.154/live/cctv15hd.m3u8
@@ -34,13 +35,9 @@ CCTV17,http://207.56.13.146:81/cdnlive/cctv17.m3u8
 CCTV17,http://192.151.150.154/live/cctv17hd.m3u8
 天津文艺,http://192.151.150.154/live/tjtv2.m3u8
 北京文艺,http://107.150.60.122/live/btv2.m3u8
-北京文艺,http://45.192.97.170:8880/play/403.m3u8
 淘电影,http://api.kkhk.itv888.vip:8080/streams/6403327f992/index.m3u8
 淘电影,http://route.079915.xyz:4022/rtp/239.3.1.250:8001
-东森电影,http://tv123.cc.cd/live.php?ch=636&sid=5aad193c77493c0effefab1b01d7afbc&exp=1787136356&sig=37caec4543ed0d7b0d3c3af4f655223c82e835482c59460954e7b216cbe951cb
 东森电影,http://iptv.4666888.xyz/iptv2A.php?id=48
-东森电影,https://smt.1678520.xyz/163189/dsdy
-美亚电影,http://tv123.cc.cd/live.php?ch=646&sid=5aad193c77493c0effefab1b01d7afbc&exp=1787136356&sig=ba3242fb178cd2400addb902488ca09f4022a6fd498235d1cf65e293fb0091be
 天映频道,https://cdn3.indevs.in/stream/live/typd/
 龙华偶像,http://rihou.cc:555/tv/[Pd]龙华偶像
 龙华偶像,https://8.fast.hidns.vip/163189/lhox
@@ -97,7 +94,6 @@ CCTV17,http://192.151.150.154/live/cctv17hd.m3u8
 龙华电影,https://8.fast.hidns.vip/163189/lhdy
 龙华经典,https://8.fast.hidns.vip/163189/lhjd
 龙华戏剧,https://8.fast.hidns.vip/163189/lhxj
-峨眉电影,http://api.kkhk.itv888.vip:8080/streams/0558bdb0324/index.m3u8
 CHC影迷电影,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chchq#http://38.75.136.137:98/gslb/dsdqpub/chchd.m3u8?auth=testpub
 CHC影迷电影,http://api.kkhk.itv888.vip:8080/streams/narc71xn3d/index.m3u8
 CHC家庭影院,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chcjt
@@ -106,7 +102,6 @@ CHC家庭影院,http://api.kkhk.itv888.vip:8080/streams/qja633ty8n/index.m3u8
 风云剧场,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyjc
 云南都市,https://hwapi.yntv.net/62hdvf/rjwt14.m3u8
 云南娱乐,https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8
-龙祥电影,http://tv123.cc.cd/live.php?ch=641&sid=5aad193c77493c0effefab1b01d7afbc&exp=1787136356&sig=119518c9c026073c4caf05af46eb32ccf6a5c69f47eee0a48d70b8cbace30969
 农林卫视,http://gxlive.snrtv.com/nlws-SD.m3u8
 陕西新闻,http://gxlive.snrtv.com/sx1-SD.m3u8
 淘剧场,http://route.079915.xyz:4022/rtp/239.3.1.95:8001
@@ -115,14 +110,12 @@ CHC家庭影院,http://api.kkhk.itv888.vip:8080/streams/qja633ty8n/index.m3u8
 星影,http://route.079915.xyz:4022/rtp/239.3.1.94:4120
 黄金华剧台,http://iptv.4666888.xyz/iptv2A.php?id=34
 黄金华剧台,https://10.fast.hidns.vip/163189/hjhjt/
-ELTA综合,http://iptv.4666888.xyz/iptv2A.php?id=49
 河南电视剧,http://1.94.31.214/php/hntv.php?id=hndsj
 广西影视,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gxys
 广西影视,http://107.150.60.122/live/gxys.m3u8
 经典电影台,https://cdn12.178.indevs.in/163189/61b8ea35ffce4630
 都市剧场,http://www.rogerxlj.top:9998/rtp/233.18.204.48:5140
 都市剧场,http://demo.medrun.cn:4022/rtp/233.18.204.48:5140
-都市剧场,https://live.264788.xyz/channel/dushijuchang?streamid=fd36352c039198fe0978687774e97e59&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 湖南电影,http://107.150.60.122/live/hndy.m3u8
 湖南电视剧,http://107.150.60.122/live/hndsj.m3u8
 龙华洋片,https://8.fast.hidns.vip/163189/lhyp
@@ -130,7 +123,6 @@ ELTA综合,http://iptv.4666888.xyz/iptv2A.php?id=49
 天映新加坡,https://10.fast.hidns.vip/163189/typd/
 吉林都市,http://107.150.60.122/live/jlds.m3u8
 爱奇艺,https://cdn3.indevs.in/stream/live/iqiyi/
-TVB星河,https://cdn3.indevs.in/stream/live/tvbxh/
 千禧经典台,https://cdn3.indevs.in/stream/live/tvbc/
 民视影剧台,https://cdn12.178.indevs.in/163189/msyj
 公视戏剧,https://cdn12.178.indevs.in/163189/gsxj
@@ -141,7 +133,6 @@ TVB星河,https://cdn3.indevs.in/stream/live/tvbxh/
 靖洋戏剧台,https://cdn12.178.indevs.in/163189/jyxj
 精选动漫台,https://cdn12.178.indevs.in/163189/jxdmt
 金光布袋戏,https://cdn12.178.indevs.in/163189/jgbdx
-东森戏剧,http://tv123.cc.cd/live.php?ch=619&sid=5aad193c77493c0effefab1b01d7afbc&exp=1787136356&sig=6b492c098ef9ce0baeb168b3224b85c6bb1ca741015693a6426c9c4d3fb27a64
 河北都市,http://1.94.31.214/php/hebei.php?id=nmpd
 长清新闻,http://1.94.31.214/php/qilu.php?id=jncqxw
 济阳综合,http://1.94.31.214/php/qilu.php?id=jnjyzh
