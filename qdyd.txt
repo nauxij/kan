@@ -33,7 +33,6 @@ CCTV15,http://192.151.150.154/live/cctv15hd.m3u8
 五星体育,https://cdn15.163189.xyz/163189/wxty
 CCTV17,http://207.56.13.146:81/cdnlive/cctv17.m3u8
 CCTV17,http://192.151.150.154/live/cctv17hd.m3u8
-山东文旅,http://38.75.136.137:82/live1/sdxw.m3u8?id=sdys&usign=CGFEm-SX2wHWrOC2NRRjkQ
 天津文艺,http://192.151.150.154/live/tjtv2.m3u8
 北京文艺,http://107.150.60.122/live/btv2.m3u8
 淘电影,http://api.kkhk.itv888.vip:8080/streams/6403327f992/index.m3u8
