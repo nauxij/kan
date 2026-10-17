@@ -33,7 +33,7 @@ CCTV17,http://my1nas.dpdns.org:1234/673168256
 天映频道,https://cdn3.indevs.in/stream/live/typd/
 龙华偶像,https://8.fast.hidns.vip/163189/lhox
 山东教育卫视,https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
-湖南卫视,http://198.204.228.26/live/hunantvhd.m3u8?ysp
+湖南卫视,http://198.204.228.26/live/hntvhd.m3u8?ysp
 浙江卫视,http://198.204.228.26/live/zjwshd.m3u8?ysp
 东方卫视,http://198.204.228.26/live/dfwshd.m3u8?ysp
 东方卫视,http://smartzhu.cn:1234/651632648
